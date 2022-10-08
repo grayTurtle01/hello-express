@@ -3,7 +3,7 @@ let express = require('express')
 app = express()
 
 app.get("/", (req,res) => {
-    res.end("Hello Express")
+    res.json( {msg: "Hello Express"} )
 })
 
 let PORT = process.env.PORT || 8000
